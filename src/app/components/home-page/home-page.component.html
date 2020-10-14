@@ -1,0 +1,111 @@
+<div class="container-fluid">
+    <div class="container">
+        <h1>Latest News</h1>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="content">
+                    <div class="lastNews">
+                        <card [styles]="styles" [post]="mainLatestNews"></card>
+                    </div>
+                    <div class="lastNewsRight">
+                        <card [styles]="stylesSmall" [post]="post" *ngFor="let post of subLatestNews"></card>
+                    </div>
+                </div>
+                <div class="editorPick">
+                    <p>Editors Picks</p>
+                    <div class="editorsPick" *ngFor="let post of editorsPicksPosts">
+                        <card [styles]="stylesInline" [post]="post"></card>
+                        <hr />
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="recent">
+                    <p>Recent Posts</p>
+                    <div class="recentPosts" *ngFor="let post of recentPosts">
+                        <card [styles]="stylesInlineLeft" [post]="post"></card>
+                        <hr />
+                    </div>
+
+                </div>
+                <div class="popular">
+                    <p>5 Most Popular</p>
+                    <ol>
+                        <li *ngFor="let post of popularPosts">{{post?.title}}</li>
+
+                    </ol>
+
+                </div>
+                <div class="goodNews">
+                    <p class="head">Good News Newsetter</p>
+                    <p>is simply dummy text of the printing and typesetting industry.</p>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="email" placeholder="Email">
+                        <button class="btn btn-outline-success my-2 my-sm-0">Subscribe</button>
+                    </form>
+
+                </div>
+
+                <div class="follow">
+                    <p>Follow Us</p>
+                    <i class="fa fa-facebook icons" aria-hidden="true"></i>
+                    <i class="fa fa-twitter icons" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus-g icons"></i>
+                    <i class="fa fa-youtube-play icons"></i>
+                    <i class="fa fa-linkedin icons"></i>
+                    <i class="fa fa-facebook last icons"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="hrAboveTrand" />
+        <h3>Trending</h3>
+        <div class="trend">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div *ngFor="let post of trendingTopPost">
+                        <card [styles]="stylesSmallMediaNone" [post]="post"></card>
+                        <hr />
+                    </div>
+                    <div *ngFor="let post of trendingPosts">
+                        <card [styles]="stylesImageNone" [post]="post"></card>
+                        <hr />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div *ngFor="let post of trendingTopPost">
+                        <card [styles]="stylesSmallMediaNone" [post]="post"></card>
+                        <hr />
+                    </div>
+                    <div *ngFor="let post of trendingPosts">
+                        <card [styles]="stylesImageNone" [post]="post"></card>
+                        <hr />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div *ngFor="let post of trendingTopPost">
+                        <card [styles]="stylesSmallMediaNone" [post]="post"></card>
+                        <hr />
+                    </div>
+                    <div *ngFor="let post of trendingPosts">
+                        <card [styles]="stylesImageNone" [post]="post"></card>
+                        <hr />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div *ngFor="let post of trendingTopPost">
+                        <card [styles]="stylesSmallMediaNone" [post]="post"></card>
+                        <hr />
+                    </div>
+                    <div *ngFor="let post of trendingPosts">
+                        <card [styles]="stylesImageNone" [post]="post"></card>
+                        <hr />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

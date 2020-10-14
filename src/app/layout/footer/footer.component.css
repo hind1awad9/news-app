@@ -1,0 +1,30 @@
+.container-fluid
+{
+    background-color: #1E1E1E;
+    height: 50px;
+}
+.footer {
+   
+    width: 100%;
+    color: white;
+    text-align: left;
+ }
+ .footer span, .footer p
+ {
+     color:#878879;
+     padding-top: 1em;
+     margin: 0;
+ }
+
+ button {
+    position: fixed;
+    bottom: 8px;
+    right: 5px;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    border-radius: 50px;
+    width: 35px;
+    height: 32px;
+    border: none;
+  }

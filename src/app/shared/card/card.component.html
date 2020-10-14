@@ -1,0 +1,45 @@
+<div class="containerr" style="width: 100%;">
+    <img  class="postCover" alt="image" title="image" src="{{post?.urlToImage}}" 
+        [style.display]="styles?.imageDisplay" [style.float]="styles?.imageDisplay"
+        [style.marginRight]="styles?.imageMargin" [style.height]="styles?.imageHeight"
+        [style.width]="styles?.imageWidth">
+        <!-- <img [style.width]="styles?.imageWidth" src="../../../assets/images/2.jpg"> -->
+
+   
+    <div [style.display]="styles?.cardDisplay" [style.width]="styles?.cardWidth">
+        <div class="category" [style.display]="styles?.categoryDisplay">
+            <span>{{post?.category}}</span>
+        </div>
+        <div class="dateDiv" [style.display]="styles?.dateDisplayTrending">
+            <p>{{post?.publishedAt | date}}</p>
+        </div>
+        <div class="title" [style.display]="styles?.titleDisplay" routerLink="/details" (click)="getData()">
+            <h1 [style.fontSize]="styles?.titleSize">{{post?.title}}</h1>
+        </div>
+        <div class="content">
+            <p [style.display]="styles?.shortContentDisplay" routerLink="/details" (click)="getData()" style="margin: 0;" title="{{post?.description}}">
+                {{post?.description | slice:0:50}}. </p>
+            <p [style.display]="styles?.longContentDisplay" routerLink="/details" (click)="getData()" style="margin: 0;" title="{{post?.content}}">
+                {{post?.content | slice:0:200}}. </p>
+        </div>
+        <div class="author" [style.display]="styles?.authorDisplay" [style.marginTop]="styles?.authorMargin">
+            <p *ngIf="post?.author !== null" style="margin-bottom:0">By <span>{{post?.author}}</span></p>
+        </div>
+        <div class="dateAndTime" [style.display]="styles?.dateAndTimeDisplay">
+            <p [style.display]="styles?.dateandTimeDisplay">{{post?.publishedAt | date:'medium' }}</p>
+            <p [style.display]="styles?.dateDisplay">{{post?.publishedAt | date:'shortTime' }}</p>
+        </div>
+        <div class="media" [style.display]="styles?.mediaDisplay">
+            <p>
+                <i class="fa fa-share"></i>
+                <span>7</span>
+            </p>
+            <p class="lastPar">
+                <i class='fas fa-comment'></i>
+                <span>222</span>
+            </p>
+
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

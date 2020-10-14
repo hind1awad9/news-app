@@ -1,0 +1,96 @@
+.postCover
+{
+    width: 94%;
+    margin-bottom: 0.5em;
+        height: 250px;
+    background-position: center;
+    background-size: cover;
+    /* display: none; */
+}
+/* .category, .title, .content, .author , .media
+{
+    display: none;
+} */
+.category span
+{
+    text-transform: uppercase;
+    color: #B2B2BE;
+    font-size: .6em;
+    font-weight: bold;
+}
+.dateAndTime p
+{
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    color: #9E9E9E;
+    font-size: 0.8em;
+}
+.author
+{
+    margin-top: 3em;
+  
+}
+.author span
+{
+    color: #DB352C;
+    text-transform: capitalize
+}
+.dateDiv
+{
+    display: none;
+    color: #9E9E9E;
+    font-size: 0.8em;
+}
+.media i 
+{
+    color: #B2B2BE;
+    
+}
+.media p
+{
+    margin: 0;
+}
+.media span
+{
+    color: black;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+.lastPar span
+{
+    margin-right: 0 !important;
+}
+.media
+{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #dad8d8;
+    border-radius: 3px;
+    align-items: center !important;
+    justify-content: center !important;  
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
+}
+.clear
+{
+    clear: both;
+}
+.title
+{
+    cursor: pointer;
+    outline: none;
+}
+/* @media only screen and (min-width: 992px)
+{
+    .postCover
+    {
+        width: 94% !important;
+    }
+}
+@media only screen and (min-width: 1200px)
+{
+    .postCover
+    {
+        width: 95% !important;
+    }
+} */
